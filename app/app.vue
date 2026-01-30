@@ -20,7 +20,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <UApp :locale="site.lang">
+  <UApp>
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
