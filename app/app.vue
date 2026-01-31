@@ -1,4 +1,7 @@
-<script setup>
+<script setup lang="ts">
+// TODO: Make this dynamic based on lang from app config
+import { he } from '@nuxt/ui/locale'
+
 const appConfig = useAppConfig()
 const site = appConfig.site
 useHead({
@@ -20,7 +23,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <UApp>
+  <UApp :locale="he">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
